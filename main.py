@@ -128,6 +128,7 @@ def main():
 
     publisher = input('Введите издателя: id или название: ')
     query_books_by_publisher(session, publisher)
+    session.close()
 
 if __name__ == '__main__':
     main()
